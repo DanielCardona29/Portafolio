@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+.container-style {
+    width: 500px;
+    margin: 0;
+    padding: 10px;
+}
+
+.container-style li {
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: white;
+}
+
+.container-style li:before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: rgba(54, 126, 223, .5);
+    border-radius: 1000px;
+}
+
+.container-style li:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 15px;
+    background-color: rgba(54, 126, 223, 1);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+
+/* JavaScript Skilll */
+
+.container-style li.js:after {
+    animation-name: js;
+}
+
+@keyframes js {
+    to {
+        width: 90%;
+    }
+}
+
+
+/* JQuery Skill */
+
+li.JQjs:after {
+    animation-name: JQjs;
+}
+
+@keyframes JQjs {
+    to {
+        width: 70%;
+    }
+}
+
+
+/* Html Skill */
+
+li.html:after {
+    animation-name: html;
+}
+
+@keyframes html {
+    to {
+        width: 90%;
+    }
+}
+
+
+/* CSS Skill */
+
+.container-style li.css:after {
+    animation-name: css;
+}
+
+@keyframes css {
+    to {
+        width: 85%;
+    }
+}
+
+
+/* SASS Skilll */
+
+.container-style li.sass:after {
+    animation-name: sass;
+}
+
+@keyframes sass {
+    to {
+        width: 75%;
+    }
+}
+
+
+/* ReactJs Skill */
+
+.container-style li.Rjs:after {
+    animation-name: Rjs;
+}
+
+@keyframes Rjs {
+    to {
+        width: 80%;
+    }
+}
+
+
+/* NodeJS Skill */
+
+.container-style li.Njs:after {
+    animation-name: Njs;
+}
+
+@keyframes Njs {
+    to {
+        width: 60%;
+    }
+}
+
+
+/*ExpressJS Skill */
+
+.container-style li.Ejs:after {
+    animation-name: Ejs;
+}
+
+@keyframes Ejs {
+    to {
+        width: 40%;
+    }
+}
+
+
+/* Languajes Skill */
+
+
+/* Spanish */
+
+.container-style li.es:after {
+    animation-name: es;
+}
+
+@keyframes es {
+    to {
+        width: 100%;
+    }
+}
+
+
+/* English */
+
+.container-style li.en:after {
+    animation-name: en;
+}
+
+@keyframes en {
+    to {
+        width: 50%;
+    }
+}
+
+
+/*Diseño responsivo*/
+
+@media(max-width:558px) {
+    .container-style {
+        width: 100%;
+    }
+}

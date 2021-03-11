@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+
+/*Ajustando los estilos de toda la página*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*Estilos del header*/
+
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: #fbfbfb;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.header>.separador {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.header>.separador>span {
+    font-size: 20px;
+    color: black;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+.header>.separador>span:active {
+    transform: scale(1.2);
+}
+
+
+/*Estilos del logo en el header*/
+
+.header>.separadorLogo {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.header>.separadorLogo>span {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-image: url(../images/Logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.header>.separadorLogo>span:active {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width:843px) {
+    .header>.separadorLogo {
+        width: 60px;
+    }
+}
+
+
+/* Estilos del Lenguaje */
+
+.header>.separadorLenguaje {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+}
+
+.header>.separadorLenguaje>.titleLanguaje {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header>.separadorLenguaje>.titleLanguaje:active {
+    transform: scale(1.2);
+}
+
+.header>.separadorLenguaje>.titleLanguaje>.text {
+    color: black;
+    font-weight: bold;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    user-select: none;
+}
+
+.header>.separadorLenguaje>.titleLanguaje>.icon {
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/EarthPlaneticon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.header .movileButton {
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+    background-image: url(../images/menuIcon.svg);
+    background-size: contain;
+    display: none;
+}
+
+
+/*Estilos del titulo*/
+
+.title h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+@media (max-width:699px) {
+    .header {
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    .header>.separador {
+        display: none;
+    }
+    .header>.separadorLenguaje {
+        display: none;
+    }
+    .header .movileButton {
+        display: block;
+    }
+}
