@@ -5,5 +5,5 @@
   </a>
 </p>
 <h1 align="center">
-Portafolio personal, Un saluditos para todos</h1>
+Creado con Gatsby</h1>
 
