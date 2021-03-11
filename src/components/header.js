@@ -4,32 +4,32 @@ import '../styles/header.css'
 const Header = (props) => {
 
     const _Header = (
-        <header class="header ">
-            <div class="separador ">
+        <header className="header ">
+            <div className="separador ">
                 <span>Inicio</span>
             </div>
-            <div class="separador ">
+            <div className="separador ">
                 <span>Pasatiempos</span>
             </div>
-            <div class="separador ">
+            <div className="separador ">
                 <span>Fotos</span>
             </div>
-            <div class="separador ">
+            <div className="separador ">
                 <span>Proyectos</span>
             </div>
-            <div class="separador ">
+            <div className="separador ">
                 <span >Habilidades</span>
             </div>
-            <div class="separadorLogo ">
+            <div className="separadorLogo ">
                 <span></span>
             </div>
-            <div class="separadorLenguaje ">
-                <div class="titleLanguaje ">
-                    <span class="text ">Lenguaje</span>
-                    <span class="icon "></span>
+            <div className="separadorLenguaje ">
+                <div className="titleLanguaje ">
+                    <span className="text ">Lenguaje</span>
+                    <span className="icon "></span>
                 </div>
             </div>
-            <div class="movileButton" ></div>
+            <div className="movileButton" ></div>
         </header>
     )
 
