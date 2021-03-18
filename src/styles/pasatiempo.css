@@ -1,0 +1,158 @@
+.wrapper-pasatiempos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Barlow Condensed", sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    flex-direction: column;
+}
+
+.wrapper-pasatiempos #section1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-pasatiempos #section1 .contenido {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-pasatiempos #section2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darkblue;
+}
+
+.wrapper-pasatiempos #section2 .contenido {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-pasatiempos #section3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../images/pasatiempos/Fortnite.jpg);
+}
+
+.wrapper-pasatiempos #section3 .contenido {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.wrapper-pasatiempos #section4 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../images/pasatiempos/Lol.jpg);
+
+}
+
+.wrapper-pasatiempos #section4 .contenido {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wrapper-pasatiempos #section5 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../images/pasatiempos/Valorant.jpg);
+
+}
+
+.wrapper-pasatiempos #section5 .contenido {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-pasatiempos #section6 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wrapper-pasatiempos #section6 .contenido {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-pasatiempos #section7 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../images/pasatiempos/futbol.jpg);
+
+}
+
+.wrapper-pasatiempos #section7 .contenido {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wrapper-pasatiempos #section8 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../images/pasatiempos/Ajedrez.jpg);
+
+}
+
+.wrapper-pasatiempos #section8 .contenido {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ajust{
+    background-repeat: no-repeat;
+    width: 100%;
+}

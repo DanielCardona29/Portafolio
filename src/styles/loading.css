@@ -1,0 +1,86 @@
+.Loading-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Loading-wrapper .wrapper-name {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: colors 4s infinite;
+}
+
+@keyframes colors {
+    0% {
+        border-top: 3px solid #f0ad4e;
+        border-left: 3px solid #449444;
+        border-bottom: 3px solid #d9534f;
+        border-right: 3px solid #428bca;
+    }
+
+    25% {
+        border-top: 3px solid #428bca;
+        border-left: 3px solid #f0ad4e;
+        border-bottom: 3px solid #449444;
+        border-right: 3px solid #d9534f;
+    }
+
+    50% {
+        border-top: 3px solid #d9534f;
+        border-left: 3px solid #428bca;
+        border-bottom: 3px solid #f0ad4e;
+        border-right: 3px solid #449444;
+    }
+
+    75% {
+        border-top: 3px solid #449444;
+        border-left: 3px solid #d9534f;
+        border-bottom: 3px solid #428bca;
+        border-right: 3px solid #f0ad4e;
+    }
+    100% {
+        border-top: 3px solid #f0ad4e;
+        border-left: 3px solid #449444;
+        border-bottom: 3px solid #d9534f;
+        border-right: 3px solid #428bca;
+    }
+}
+
+.Loading-wrapper .wrapper-name .Letra {
+    color: white;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 4rem;
+}
+
+.Loading-wrapper .wrapper-name .Letra::before {
+    content: "";
+    animation: changeLeter 5s infinite;
+}
+@keyframes changeLeter {
+    10% {
+        content: "D";
+    }
+    25% {
+        content: "A";
+    }
+    40% {
+        content: "N";
+    }
+    60% {
+        content: "I";
+    }
+
+    80% {
+        content: "E";
+    }
+    
+    100% {
+        content: "L";
+    }
+
+}

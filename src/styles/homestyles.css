@@ -1,12 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
 
 /*Estilos del envoltorio*/
 
 body {
-    background-color: #091433;
+    background: linear-gradient(1deg, rgba(9, 20, 51, 1) 20%, rgba(0, 0, 0, 1) 110%);
+    background-repeat: no-repeat;
 }
 
-
+#gatsby-focus-wrapper {
+    width: 100%;
+}
 /* Estilos del envoltorio */
 
 #___gatsby {
@@ -18,8 +31,12 @@ body {
     background-size: contain;
 }
 
-
 /* Estilos del titulo */
+
+.apear_animation {
+    overflow: hidden;
+    animation: apear 5s;
+}
 
 .wrapper .title {
     width: auto;
@@ -32,18 +49,14 @@ body {
 
 .wrapper .title h1 {
     font-size: 50px;
-    color: #FFF;
+    color: #fff;
 }
 
 .wrapper .title h2 {
     font-size: 50px;
-    color: #FFF;
-    font-family: 'Barlow Condensed', sans-serif;
+    color: #fff;
+    font-family: "Barlow Condensed", sans-serif;
 }
-
-
-/* Estilos del contenido */
-
 
 /* Informacion principal */
 
@@ -51,7 +64,6 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     user-select: none;
 }
 
@@ -61,24 +73,23 @@ body {
 
 .wrapper .contenido article p {
     font-size: 1.3rem;
-    color: #FFF;
+    color: #fff;
     margin-bottom: 15px;
     padding: 10px;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
 }
-
-
 
 /*Estilos de contenido de las habilidades*/
 
 .contenido-habilidades {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    height: auto;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
     user-select: none;
-    flex-wrap: wrap;
+    background: linear-gradient(176deg, rgba(9, 33, 51, 1) 50%, rgba(9, 20, 51, 1) 110%);
+
 }
 
 .contenido-habilidades .abilities-wrappper {
@@ -87,12 +98,15 @@ body {
     align-items: center;
     flex-direction: column;
     width: auto;
+    margin-top: 25px;
+    width: 100%;
 }
 
 .contenido-habilidades .abilities-wrappper .title-abilites {
-    color: #FFF;
+    color: #fff;
     font-size: 35px;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
+    margin-top: 25px;
 }
 
 .margiTop-30 {
@@ -103,48 +117,55 @@ body {
     margin-right: 25px;
 }
 
-
+/*/*/
 .contenido-proyectos {
     width: 100%;
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
-}
-@media (max-width:733px) {
-    .margiRight-25 {
-        margin-right: 0;
-    }
+    margin-bottom: 15vh;
 }
 
-@media (max-width:699px) {
-    .wrapper .title h1 {
-        font-size: 40px;
-    }
-    .wrapper .title {
-        margin-top: 90px;
-    }
-    .wrapper section {
-        margin-top: 100px;
-        height: auto;
-    }
-    .wrapper .title h2 {
-        font-size: 30px;
-    }
-    .contenido-proyectos .proyectos-wrapper .proyecto .title-proyecto {
-        font-size: 30px;
-    }
-    .contenido-proyectos .proyectos-wrapper .proyecto .icon {
-        width: 20px;
-        height: 20px;
-    }
-    .contenido-proyectos .proyectos-wrapper {
-        margin-top: 30px;
-    }
+.contenido-proyectos h2 {
+    margin-bottom: 50px;
 }
 
-@media(max-width:558px) {
-    .contenido-habilidades {
-        flex-direction: column;
+.contenido-proyectos .title {
+    font-size: 50px;
+    color: #fff;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+#introduccion {
+    position: relative;
+    height: 100vh;
+}
+
+#proyectos {
+    position: relative;
+    z-index: 5;
+    justify-content: initial;
+    background: linear-gradient(1deg, #092133 20%, rgba(0, 0, 0, 1) 110%);
+    height: 100vh;
+}
+
+#habilidades {
+  
+    position: relative;
+    z-index: 10;
+    transition: 0.5;
+}
+
+.title-proyecto{
+    margin-top: 15px !important;
+}
+
+@keyframes apear {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 150vh;
     }
 }

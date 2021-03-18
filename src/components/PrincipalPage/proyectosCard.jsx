@@ -45,9 +45,9 @@ const Card = (props) => {
             //Estructura de mi card
             <div className="card" id={`card${props.info.id}`} onClick={() => card_clic(props.info.id)}>
                 <div className="image" id={`cardImage${props.info.id}`}>
-                    <StaticImage src={`../../images/news.png`} width={150} quality={100} formats={["AUTO", "WEBP", "AVIF"]} alt={props.info.title} />
+                    <StaticImage src={`../../images/news.png`} width={200} quality={100} formats={["AUTO", "WEBP", "AVIF"]} alt={props.info.title} />
                 </div>
-                <div className="title" id={`cardTitle${props.info.id}`}>
+                <div className="title-card" id={`cardTitle${props.info.id}`}>
                     <h3>{props.info.title}</h3>
                 </div>
                 <div className="description" id={`cardDesc${props.info.id}`} >

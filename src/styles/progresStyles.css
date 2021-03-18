@@ -178,6 +178,6 @@ li.html:after {
 
 @media(max-width:558px) {
     .container-style {
-        width: 100%;
+        width: 80%;
     }
 }

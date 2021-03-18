@@ -1,26 +1,28 @@
-import * as React from "react"
+import React, { useState } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Contenido from '../components/contenido';
+import Loadign from '../components/Loading';
+const IndexPage = () => {
+  const [isloading, setLoading] = useState(true)
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <Contenido lang="es" />
-  </Layout>
+  setTimeout(() => {
+    setLoading(false)
+  },5000 )
 
-)
+  if (!isloading) {
+    return (
+      < Layout >
+        <SEO title="Home" />
+        <Contenido lang="es" />
+      </Layout >
+    )
+  } else {
+    return <Loadign />
+  }
+
+
+
+}
 
 export default IndexPage
-
-
-// import { StaticImage } from "gatsby-plugin-image"
-
-{/* <StaticImage
-src="../images/gatsby-astronaut.png"
-width={300}
-quality={100}
-formats={["AUTO", "WEBP", "AVIF"]}
-alt="A Gatsby astronaut"
-style={{ marginBottom: `1.45rem` }}
-/> */}

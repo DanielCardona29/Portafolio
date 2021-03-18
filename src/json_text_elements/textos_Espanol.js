@@ -19,13 +19,69 @@ export const Es_texts = {
     proyectos: [
         {
             id: 'NewNews',
-            title: 'New News',
-            description: `Pensando en como mejorar el portal de noticias de <a target="_blank" href="https://www.proteccion.com/wps/portal/proteccion/web/home/proteccion-conecta/lo-nuevo">protección.com</a>, se me ocurrió <b>New News</b> un portal en donde cada usuario puede crear y compartir noticias, no es muy profesional, pero es la primera alternativa de solución que desarrollo en este estilo.`,
+            title: 'NEW NEWS',
+            description: `Pensando en como mejorar el portal de noticias de <a target="_blank" href="https://www.proteccion.com/wps/portal/proteccion/web/home/proteccion-conecta/lo-nuevo">protección.com</a>, se me ocurrió New News un portal en donde cada usuario puede crear y compartir noticias, no es muy profesional, pero es la primera alternativa de solución que desarrollo en este estilo.`,
             image: 'news.png',
             cardColor: null,
             link_github: 'https://github.com/danielcardona123/NewNews',
-            link_API: 'https://github.com/danielcardona123/API-New-News',
-            link_web:'https://newnews-ce08d.web.app'
+            link_API: 'https://github.com/danielcardona123/API-New-News/tree/master',
+            link_web: 'https://newnews-ce08d.web.app'
         }
+    ],
+    header: [
+        {
+            name: 'Inicio',
+            action: () => {
+                window.scrollTo({
+                    top: 0,
+                    left: 0,
+                    behavior: 'smooth'
+                });
+
+            },
+            actionMobile: () => {
+                window.scrollTo({
+                    top: 0,
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            },
+        },
+
+        {
+            name: 'Proyectos',
+            action: () => {
+                window.scrollTo({
+                    top: 1400,
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            },
+            actionMobile: () => {
+                window.scrollTo({
+                    top: 2800,
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            }
+        },
+        {
+            name: 'Habilidades',
+            action: () => {
+                window.scrollTo({
+                    top: 2100,
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            },
+
+            actionMobile: () => {
+                window.scrollTo({
+                    top: 4200,
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            }
+        },
     ]
 }

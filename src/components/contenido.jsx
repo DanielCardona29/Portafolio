@@ -1,7 +1,7 @@
 //Elementos de terceros
 import React from 'react';
 import PropsType from 'prop-types'
-
+import * as $ from 'jquery';
 //Mis elementos
 import '../styles/homestyles.css'
 import '../styles/progresStyles.css'
@@ -10,28 +10,56 @@ import Introduccion from './PrincipalPage/introduction.jsx';
 import Card from './PrincipalPage/proyectosCard.jsx';
 import { Es_texts } from '../json_text_elements/textos_Espanol';
 const Contenido = (props) => {
+    setTimeout(() => {
+        $('#wrapper-index').removeClass('apear_animation')
+    }, 4000)
 
+    //Hacemos el parallax del contenido
+
+
+    window.addEventListener("scroll", () => {
+
+        if (window.innerWidth <= 425) {
+            let proyectos = document.getElementById('proyectos');
+            let habilidades = document.getElementById('habilidades');
+            let offset = window.pageYOffset - (window.pageYOffset * 0.3);
+            let offset2 = window.pageYOffset - (window.pageYOffset * 0.4);
+            proyectos.style.top = offset + "px";
+            habilidades.style.top = offset2 + "px";
+        } else {
+            let proyectos = document.getElementById('proyectos');
+            let habilidades = document.getElementById('habilidades');
+            let offset = window.pageYOffset - (window.pageYOffset * 0.7);
+            let offset2 = window.pageYOffset - (window.pageYOffset * 1);
+            proyectos.style.top = offset + "px";
+            habilidades.style.top = offset2 + "px";
+
+        }
+
+    });
     return (
-        <div className="wrapper ">
+        <div className="wrapper apear_animation" id="wrapper-index">
             <div className="title ">
                 <h1>Daniel Cardona Calderón</h1>
             </div>
 
-            <section className="contenido ">
+            <section className="contenido" id="introduccion">
                 <Introduccion lang={props.lang} />
             </section>
 
             <section className="contenido-proyectos" id="proyectos">
+                <h2 className="title title-proyecto">PROYECTOS</h2>
+
+
                 {
                     props.Cards.map((item, key) => {
                         return <Card lang={props.lang} info={item} />
                     })
                 }
             </section>
+            <section className="contenido-habilidades" id="habilidades">
 
-            <section className="contenido-habilidades" id="abilities">
-
-                <div className="title margiRight-25">
+                <div className="title ">
                     <h2>HABILIDADES</h2>
                 </div>
 
@@ -69,7 +97,6 @@ Contenido.PropsType = {
     lang: PropsType.string,
     Cards: PropsType.object
 }
-
 
 Contenido.defaultProps = {
     Cards: Es_texts.proyectos,
