@@ -20,9 +20,6 @@ const IndexPage = () => {
   } else {
     return <Loadign />
   }
-
-
-
 }
 
 export default IndexPage
